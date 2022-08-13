@@ -20,5 +20,6 @@ from app_familia.views import getFamilia, insertFamilia
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('familia/', getFamilia),
-    path('familia/<familiar>', insertFamilia)
+    path('familia/<familiar>', insertFamilia),
+    path('',getFamilia)
 ]
